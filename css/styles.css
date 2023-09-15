@@ -1,8 +1,9 @@
-
+/*=============== OTHER ===============*/
 
 .container{
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -39,39 +40,8 @@ li {
     list-style-type: none;
 }
 
-
-.header-logo-s {
-    color: #2E2F42;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 1.17; /* 116.667% */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-
-.header-logo-w {
-    color: #4d5ae5;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 1.17; /* 116.667% */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-right: 76px;
-}
-
-.container-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+img {
+    display: block
 }
 
 .main-link {
@@ -110,13 +80,47 @@ li {
     color :#404bbf;
 }
 
+/*=============== HEADER ===============*/
 
+.header-logo-s {
+    color: #2E2F42;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-logo-w {
+    color: #4d5ae5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 76px;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header {
     display: flex;
     height: 72px;
     justify-content: center;
-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-list {
@@ -132,6 +136,9 @@ align-items: center;
     gap: 40px;
 }
 
+.main-link {
+    padding: 24px 0
+}
 
 .header-address {
     display: flex;
@@ -153,7 +160,7 @@ align-items: center;
     gap: 40px;
 }
 
-
+/*=============== MAIN TITLE ===============*/
 
 .main-title{
     background-color: #2E2F42;
@@ -166,7 +173,7 @@ align-items: center;
     font-size: 56px;
     line-height: 1.07; /* 107.143% */
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -186,6 +193,7 @@ align-items: center;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    min-width: 169px
 }
 
 .button:hover {
@@ -195,6 +203,8 @@ align-items: center;
 .button:focus {
     background-color: #404BBF;
 }
+
+/*=============== MAIN TEXT ===============*/
 
 .section-list {
     background-color: #FFF;
@@ -215,6 +225,10 @@ align-items: center;
     overflow: hidden;
 }
 
+.section-part {
+    width: calc((100% - 72px) / 4)
+}
+
 .section-title {
     color:#2e2f42;
     font-size: 20px;
@@ -224,8 +238,6 @@ align-items: center;
     margin-bottom: 8px;
 }
 
-
-
 .section-text {
     font-size: 16px;
     line-height: 1.5; /* 150% */
@@ -233,7 +245,7 @@ align-items: center;
     padding: 120px 0;
 }
 
-
+/*=============== TEAM ===============*/
 
 .section-team{
     background-color: #F4F4FD;
@@ -258,15 +270,15 @@ align-items: center;
 .team-item {
     padding: 32px 0;
     text-align: center;
-
 }
 
 .team-part {
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-background: var(--WHITE, #FFF);
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
-0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
-0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -276,7 +288,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     line-height: 1.2; /* 120% */
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-
 }
 
 .team-position {
@@ -285,6 +296,8 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
 }
+
+/*=============== PORTFOLIO ===============*/
 
 .section-portfolio {
     background-color: #FFF;
@@ -298,36 +311,35 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     text-align: center;
     font-size: 36px;
     text-transform: capitalize;
-font-weight: 700;
-line-height: 1.11; /* 111.111% */
-letter-spacing: 0.02em;
-margin-bottom: 72px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
-display: flex;
-flex-wrap: wrap;
-gap: 48px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
 
 .port-item{
     display: flex;
-    
-padding: 0px 16px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
-margin: 32px 0;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    margin: 32px 0;
+    border: 1px solid #e7e9fc
 }
 
 .portfolio-link {
     background-color:#FFF;
-    width: 360px;;
     width: calc((100% - 48px) / 3);
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
-background: var(--WHITE, #FFF);
+    background: var(--WHITE, #FFF);
 }
 
 .portfolio-section {
@@ -335,6 +347,7 @@ background: var(--WHITE, #FFF);
     font-size: 20px;
     line-height: 1.2; /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px
 }
 
 .portfolio-subsection {
@@ -349,9 +362,12 @@ background: var(--WHITE, #FFF);
 	max-width: 100%;
 }
 
+/*=============== FOOTER ===============*/
+
 .footer {
     background-color: #2E2F42;
     height: 312px;
+    padding: 100px 0
 }
 
 .footer-text {
@@ -381,7 +397,8 @@ background: var(--WHITE, #FFF);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .container-footer {
